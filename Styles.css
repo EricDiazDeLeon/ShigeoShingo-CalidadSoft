@@ -1,0 +1,163 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Encabezado con estilo de imagen */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px 30px;
+    border-bottom: 5px solid #3498db;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Secciones de contenido */
+.section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #3498db;
+    font-weight: 600;
+}
+
+/* Listas con estilo de imagen */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    list-style-type: none;
+    counter-increment: item;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(item) ".";
+    color: #3498db;
+    font-weight: bold;
+    position: absolute;
+    left: -25px;
+}
+
+/* Nested list styling */
+ol ol {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ol ol li:before {
+    content: counter(item) ".";
+    left: -20px;
+}
+
+/* Estilo para el pie de página */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-info {
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para texto entre paréntesis */
+.parentheses {
+    font-style: italic;
+    color: #bdc3c7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header, .section, .footer {
+        padding: 20px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+}
