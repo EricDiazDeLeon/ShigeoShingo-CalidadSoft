@@ -52,6 +52,10 @@ body {
 .secoundblue {
   background-color: #0a9396;
 }
+
+.lowblue {
+  background-color: #a8dadc;
+}
 h1 {
   font-size: 2.8rem;
   margin-bottom: 20px;
